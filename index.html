@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 id="title"></h1>
+      <h3 id="subtitle"></h3>
+      <div id="intro">
+        <p class="main">High-produce supply stores generally offer a larger 
+          amount of healthier foods, particularly fruits and vegetables. 
+          They included supermarkets, big box stores, and so on. On the contrary,
+          low-produce supply stores generally offer a low amount of healthy 
+          food choices. It's important to measure the access to food by neighborhood 
+          to understand if there are place-based disparities in food choices and 
+          identify the potential food desert. </p>
+        <p id="instruction">This application maps the access to high/low produce 
+          supply stores, along with the distribution of high poverty.
+          There're 5 pages. Page 1-3 show the accessibility to high-produce 
+          supply stores of each region; page 4 shows the accessibility to low-produce 
+          supply stores; the last page show the spatial pattern of high poverty. 
+          To get more information for one of the regions, please click on that 
+          region on the map. </p>
+      </div>
+      <div id="notes">
+        <p id="note"> </p>
+      </div>
+      <div id="results" >
+        <p id="summary"></p>
+        <p id="content"></p>
+        <!-- <p id="result"></p> -->
+        <!-- <h1 class="day-of-week">Day of Week</h1>
+        <p class="main">Your garbage collection day is <span class="day-of-week">
+        Day of Week</span>.</p> -->
+      </div>
+      <div id="buttondiv">
+        <button id='prev'>Previous</button>
+        <button id='next'>Next</button>
+      </div> 
+      <div id="buttondiv2">
+      </div> 
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Legend -->
+    <div class="legend">
+      <div class='legend-title'>Legend</div>
+      <div class='legend-scale'>
+        <ul class='legend-labels-a'>
+          <li><span id='alabel1'></span>No Access</li>
+          <li><span id='alabel2'></span>Low Access</li>
+          <li><span id='alabel3'></span>Moderate or high access</li>
+        </ul>
+        <ul class='legend-labels-b'>
+          <li><span id='blabel1'></span>Yes</li>
+          <li><span id='blabel2'></span>No</li>
+        </ul>
+        <ul class='legend-labels-c'>
+          <li><span id='clabel1'></span>0 - 13</li>
+          <li><span id='clabel2'></span>13 - 23</li>
+          <li><span id='clabel3'></span>23 - 31</li>
+          <li><span id='clabel4'></span>31 - 43</li>
+          <li><span id='clabel5'></span>43 - 148</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
